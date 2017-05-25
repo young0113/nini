@@ -1,0 +1,10 @@
+<div width=900px align='center'>
+<h1>Edit</h1>
+<p>edit post : <%=@post.id%></p>
+<form action="/blog/update">
+<input type="hidden" name="id" value=" <%=@post.id%>">
+<input type="text" name="p_title" placeholder="제목" value=<%=@post.title%>><br><br>
+<textarea name="p_content"><%=@post.content%></textarea><br><br>
+<input type="submit" value="확 인"> <br><br>
+</form>
+</div>
